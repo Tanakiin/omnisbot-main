@@ -651,7 +651,7 @@ bot.on('message', msg=>{
             const helpembed = new Discord.MessageEmbed()
                 .setTitle('***Omnis Bot Help***')
                 .setColor('#8E2610')
-                .addField('-------------w---------------------------------','**Games**')
+                .addField('----------------------------------------------','**Games**')
                 .addField('*Jackbox*','`ta jackbox` to randomly select which Jackbox game to play \n `ta jackbox1, jackbox5, jackbox6` to randomly select which minigame to play within a Jackbox game' )
                 .addField('*PUBG*', '`ta pubg` to randomly select which PUBG map to play on \n `ta sanhok, miramar, vikendi, erangel` to randomly select a place to land in the chosen map \n `ta map sanhok, miramar, vikendi, erangel` to display the appropriate map for each prompt' )
                 .addField('----------------------------------------------','**Miscellaneous and Music**')
