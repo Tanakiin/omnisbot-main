@@ -710,7 +710,7 @@ bot.on('message', msg=>{
                 return message.reply("Please join a voice channel first")
             VC.join()
             .then(connection => {
-                const dispatcher = connection.play('C:/Users/ADMIN/Desktop/Discord Bot/test.mp3');
+                const dispatcher = connection.play('C:/Users/ADMIN/Documents/GitHub/omnisbot-main/test.mp3');
                 dispatcher.on("end", end => {VC.leave()});
             })
             .catch(console.error);
