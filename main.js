@@ -645,7 +645,7 @@ bot.on('message', msg=>{
             msg.channel.send(profile)
         break;
         case 'avatar':
-            msg.channel(msg.author.displayAvatarURL())
+            msg.channel.send(msg.author.displayAvatarURL())
         break;
         case 'help':
             const helpembed = new Discord.MessageEmbed()
