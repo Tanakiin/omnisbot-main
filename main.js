@@ -704,7 +704,7 @@ bot.on('message', msg=>{
         break;
     }
     bot.on('message', message => {
-        if (message.content === 'ta sound test') {
+        if (message.content.match('ta sound test'){
             var VC = msg.member.voice.channel;
             if (!VC)
                 return message.reply("Please join a voice channel first")
