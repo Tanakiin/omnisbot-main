@@ -702,19 +702,6 @@ bot.on('message', msg=>{
                 .setImage('https://zilliongamer.com/uploads/pubg-mobile/map-location-information/pubg-mobile-vikendi.jpg')
             msg.channel.send(vikendi)
         break;
-    }
-    bot.on('message', message => {
-        if (message.content.match('ta sound test')){
-            var VC = msg.member.voice.channel;
-            if (!VC)
-                return message.reply("Please join a voice channel first")
-            VC.join()
-            .then(connection => {
-                const dispatcher = connection.play('C:/Users/ADMIN/Documents/GitHub/omnisbot-main/test.mp3');
-                dispatcher.on("end", end => {VC.leave()});
-            })
-            .catch(console.error);
-        }
-      });
+    };
 })
 bot.login(process.env.token);
