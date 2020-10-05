@@ -9,7 +9,7 @@ bot.on('ready', () =>{
 })
 
 bot.on('message', msg=>{
-    
+    if (message.content.startsWith("ta")) {
     let args = msg.content.substring(PREFIX.length).split(" ");
 
     switch(args[0]){
@@ -670,7 +670,7 @@ bot.on('message', msg=>{
                 dispatcher.on("finish", () => {msg.member.voice.channel.leave()});
             })
             .catch(console.error);
-    }
+    }}
     const premap = 'ta map '
     let args2 = msg.content.substring(premap.length).split(" ");
     switch(args2[0]){
