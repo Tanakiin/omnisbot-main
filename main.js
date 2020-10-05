@@ -11,7 +11,19 @@ bot.on('ready', () =>{
 bot.on('message', msg=>{
     
     let args = msg.content.substring(PREFIX.length).split(" ");
-
+    if('message', msg == 'ta help')
+        const helpembed = new Discord.MessageEmbed()
+                .setTitle('***Omnis Bot Help***')
+                .setColor('#8E2610')
+                .addField('----------------------------------------------','**Games**')
+                .addField('*Jackbox*','`ta jackbox` to randomly select which Jackbox game to play \n `ta jackbox1, jackbox5, jackbox6` to randomly select which minigame to play within a Jackbox game' )
+                .addField('*PUBG*', '`ta pubg` to randomly select which PUBG map to play on \n `ta sanhok, miramar, vikendi, erangel` to randomly select a place to land in the chosen map \n `ta map sanhok, miramar, vikendi, erangel` to display the appropriate map for each prompt' )
+                .addField('----------------------------------------------','**Miscellaneous and Music**')
+                .addField('*Music*','`ta play <songname>` to play a certain song, (ignore the pointed brackets) \n `ta clear <number>` to clear a certain amount of lines, abuse will result in mute or ban')
+                .addField('*Miscellaneous*','`ta profile` to view data on the users profile \n `ta avatar` to get a direct link to the users profile picture')
+                .addField('***This bot is still in development and there are obviously going to be numerous bugs, please be patient with updates***','**----------------------------------------------**')
+                .setAuthor('Tanakiin')
+                msg.channel.send(helpembed);
     switch(args[0]){
         case 'hi':
             msg.channel.send('Hi ' + `${msg.author}` + '!')
@@ -646,20 +658,6 @@ bot.on('message', msg=>{
         break;
         case 'avatar':
             msg.channel.send(msg.author.displayAvatarURL())
-        break;
-        case 'help':
-            const helpembed = new Discord.MessageEmbed()
-                .setTitle('***Omnis Bot Help***')
-                .setColor('#8E2610')
-                .addField('----------------------------------------------','**Games**')
-                .addField('*Jackbox*','`ta jackbox` to randomly select which Jackbox game to play \n `ta jackbox1, jackbox5, jackbox6` to randomly select which minigame to play within a Jackbox game' )
-                .addField('*PUBG*', '`ta pubg` to randomly select which PUBG map to play on \n `ta sanhok, miramar, vikendi, erangel` to randomly select a place to land in the chosen map \n `ta map sanhok, miramar, vikendi, erangel` to display the appropriate map for each prompt' )
-                .addField('----------------------------------------------','**Miscellaneous and Music**')
-                .addField('*Music*','`ta play <songname>` to play a certain song, (ignore the pointed brackets) \n `ta clear <number>` to clear a certain amount of lines, abuse will result in mute or ban')
-                .addField('*Miscellaneous*','`ta profile` to view data on the users profile \n `ta avatar` to get a direct link to the users profile picture')
-                .addField('***This bot is still in development and there are obviously going to be numerous bugs, please be patient with updates***','**----------------------------------------------**')
-                .setAuthor('Tanakiin')
-                msg.channel.send(helpembed)
         break;
         case 'test':
             if (!msg.member.voice.channel)
