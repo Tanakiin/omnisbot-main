@@ -9,7 +9,7 @@ bot.on('ready', () =>{
 })
 
 bot.on('message', msg=>{
-    if (message.content.startsWith("ta")) {
+    if (msg.content.startsWith("ta")) {
     let args = msg.content.substring(PREFIX.length).split(" ");
 
     switch(args[0]){
