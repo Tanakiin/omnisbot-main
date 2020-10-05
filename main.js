@@ -11,7 +11,7 @@ bot.on('ready', () =>{
 bot.on('message', msg=>{
     
     let args = msg.content.substring(PREFIX.length).split(" ");
-    if('message', msg == 'ta help')
+    if('message', msg.content == 'ta help')
         const helpembed = new Discord.MessageEmbed()
                 .setTitle('***Omnis Bot Help***')
                 .setColor('#8E2610')
