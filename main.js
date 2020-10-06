@@ -630,6 +630,42 @@ bot.on('message', msg=>{
             var result = Math.floor((Math.random() * mir.length) + 0);
             msg.channel.send(mir[result]);
         break;
+        case 'imposter': case 'imposters':
+            const i1 = new Discord.MessageEmbed()
+                .setTitle('There shall be 1 Imposter')
+                .setColor('#8E2610')
+                .setImage('https://i.imgur.com/VlA4fYn.png')
+            const i2 = new Discord.MessageEmbed()
+                .setTitle('There shall be 2 Imposters')
+                .setColor('#8E2610')
+                .setImage('https://i.imgur.com/3dOMVTr.png')
+            const i3 = new Discord.MessageEmbed()
+                .setTitle('There shall be 3 Imposters')
+                .setColor('#8E2610')
+                .setImage('https://i.imgur.com/JAPB0it.png')    
+                var imp = [ i1, i2, i3];
+            
+            var result = Math.floor((Math.random() * imp.length) + 0);
+            msg.channel.send(imp[result]);
+        break;
+        case 'amongus': case 'amongusmap':
+            const pol = new Discord.MessageEmbed()
+                .setTitle('Play in POLUS')
+                .setColor('#092582')
+                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/6/67/PolusButton.png/revision/latest?cb=20201006103729')
+            const mira = new Discord.MessageEmbed()
+                .setTitle('Play in MIRA HQ')
+                .setColor('#b51818')
+                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/4/4d/MIRAHQButton.png/revision/latest/scale-to-width-down/185?cb=20201006103813')
+            const skeld = new Discord.MessageEmbed()
+                .setTitle('Play in The Skeld')
+                .setColor('#9c8686')
+                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/c/c9/TheSkeldButton.png/revision/latest/scale-to-width-down/185?cb=20201006103842')    
+                var mapss = [ pol, mira, skeld];
+            
+            var result = Math.floor((Math.random() * mapss.length) + 0);
+            msg.channel.send(mapss[result]);
+        break;
         case 'profile':
             const created = msg.author.createdAt
             const userid = msg.author.id
