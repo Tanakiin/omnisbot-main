@@ -670,6 +670,61 @@ bot.on('message', msg=>{
                 dispatcher.on("finish", () => {msg.member.voice.channel.leave()});
             })
             .catch(console.error);
+        break;
+        case 'name':
+            const red = new Discord.MessageEmbed()
+                .setTitle('Your Name is Red')
+                .setColor('#db0000')
+                .setImage('https://i.imgur.com/n6vi8lF.png')
+            const blue = new Discord.MessageEmbed()
+                .setTitle('Your Name is Blue')
+                .setColor('#0500a1')
+                .setImage('https://i.imgur.com/v8pX2m0.png')
+            const green = new Discord.MessageEmbed()
+                .setTitle('Your Name is Green')
+                .setColor('#0d6300')
+                .setImage('https://i.imgur.com/w20AW9f.png')
+            const pink = new Discord.MessageEmbed()
+                .setTitle('Your Name is Pink')
+                .setColor('#ff00ae')
+                .setImage('https://i.imgur.com/q1rZYVp.png')
+            const orange = new Discord.MessageEmbed()
+                .setTitle('Your Name is Orange')
+                .setColor('#ff5100')
+                .setImage('https://i.imgur.com/oKI4Sey.png')
+            const yellow = new Discord.MessageEmbed()
+                .setTitle('Your Name is Yellow')
+                .setColor('#ffe600')
+                .setImage('https://i.imgur.com/U4mUPjR.png')
+            const black = new Discord.MessageEmbed()
+                .setTitle('Your Name is Black')
+                .setColor('#000000')
+                .setImage('https://i.imgur.com/wKcyDdd.png')
+            const white = new Discord.MessageEmbed()
+                .setTitle('Your Name is White')
+                .setColor('#c9c9c9')
+                .setImage('https://i.imgur.com/pKp0Y54.png')
+            const purple = new Discord.MessageEmbed()
+                .setTitle('Your Name is Purple')
+                .setColor('#8f0081')
+                .setImage('https://i.imgur.com/NZXl7Rr.png')
+            const brown = new Discord.MessageEmbed()
+                .setTitle('Your Name is Brown')
+                .setColor('#5c270b')
+                .setImage('https://i.imgur.com/iKySSj9.png')
+            const lightblue = new Discord.MessageEmbed()
+                .setTitle('Your Name is Light Blue')
+                .setColor('#00ffe5')
+                .setImage('https://i.imgur.com/1obCGH7.png')
+            const lime = new Discord.MessageEmbed()
+                .setTitle('Your Name is Lime')
+                .setColor('#80ff00')
+                .setImage('https://i.imgur.com/K0K42qN.png')
+            var names = [red, blue, green, yellow, purple, pink, white, black, brown, orange, lime, lightblue];
+            
+            var result = Math.floor((Math.random() * names.length) + 0);
+            msg.channel.send(names[result]);
+        break;
     }}
     const premap = 'ta map '
     let args2 = msg.content.substring(premap.length).split(" ");
