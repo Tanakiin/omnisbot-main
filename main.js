@@ -16,10 +16,6 @@ bot.on('message', msg=>{
         case 'hi':
             msg.channel.send('Hi ' + `${msg.author}` + '!')
         break;
-        case 'clear':
-            if(!args[1]) return msg.reply('Error! Please define the number of lines you want to delete')
-            msg.channel.bulkDelete(args[1]);
-        break;
         case 'challenge':
             const c1 = new Discord.MessageEmbed()
                 .setTitle('Your Challenge:')
