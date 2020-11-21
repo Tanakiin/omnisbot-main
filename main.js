@@ -704,7 +704,7 @@ bot.on('message', msg=>{
             var result = Math.floor((Math.random() * mir.length) + 0);
             msg.channel.send(mir[result]);
         break;
-        case 'imposter': case 'imposters':
+        case 'imposter': case 'imposters': case 'imp':
             const i1 = new Discord.MessageEmbed()
                 .setTitle('There shall be 1 Imposter')
                 .setColor('#8E2610')
@@ -722,7 +722,7 @@ bot.on('message', msg=>{
             var result = Math.floor((Math.random() * imp.length) + 0);
             msg.channel.send(imp[result]);
         break;
-        case 'amongus': case 'amongusmap':
+        case 'amongus': case 'amongusmap': case 'au': case 'aumap':
             const pol = new Discord.MessageEmbed()
                 .setTitle('Play in POLUS')
                 .setColor('#092582')
@@ -764,6 +764,7 @@ bot.on('message', msg=>{
                 .addField('----------------------------------------------','**Games**')
                 .addField('*Jackbox*','`ta jackbox` to randomly select which Jackbox game to play \n `ta j1, j3, j4, j5, j6, j7` to randomly select which minigame to play within a Jackbox game' )
                 .addField('*PUBG*', '`ta pubg` to randomly select which PUBG map to play on \n `ta sanhok, miramar, vikendi, erangel` to randomly select a place to land in the chosen map \n `ta map sanhok, miramar, vikendi, erangel` to display the appropriate map for each prompt \n `ta challenge` to randomly select a challenge ' )
+                .addField('*Among Us*', '`ta imp` to randomly select the number of imposters in a game \n `ta au` to randomly select the map you want to play in' )
                 .addField('----------------------------------------------','**Miscellaneous and Music**')
                 .addField('*Music*','`ta play <songname>` to play a certain song, (ignore the pointed brackets) \n `ta clear <number>` to clear a certain amount of lines, abuse will result in mute or ban')
                 .addField('*Miscellaneous*','`ta profile` to view data on the users profile \n `ta avatar` to get a direct link to the users profile picture')
