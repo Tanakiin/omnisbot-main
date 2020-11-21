@@ -92,6 +92,14 @@ bot.on('message', msg=>{
                 .setTitle('You shall play Jackbox Party Pack 1')
                 .setColor('#8E2610')
                 .setImage('https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/50/73/8a/50738add-bbc2-dcd5-68c2-104d1033a4cd/source/512x512bb.jpg')
+            const j3 = new Discord.MessageEmbed()
+                .setTitle('You shall play Jackbox Party Pack 3')
+                .setColor('#8E2610')
+                .setImage('https://banner2.cleanpng.com/20180721/iwi/kisspng-the-jackbox-party-pack-3-jackbox-games-clip-art-jackbox-party-pack-3-5b52bc2bedb769.3436877815321487799737.jpg')
+            const j4 = new Discord.MessageEmbed()
+                .setTitle('You shall play Jackbox Party Pack 4')
+                .setColor('#8E2610')
+                .setImage('https://steamcdn-a.akamaihd.net/steam/apps/610180/logo.png?t=1568054310')
             const j5 = new Discord.MessageEmbed()
                 .setTitle('You shall play Jackbox Party Pack 5')
                 .setColor('#8E2610')
@@ -100,7 +108,11 @@ bot.on('message', msg=>{
                 .setTitle('You shall play Jackbox Party Pack 6')
                 .setColor('#8E2610')
                 .setImage('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/a8/ea/c1/a8eac1a9-dec0-36fc-0d1a-cb64e7a1e856/source/512x512bb.jpg')    
-                var jbox = [ j1, j5, j6];
+            const j7 = new Discord.MessageEmbed()
+                .setTitle('You shall play Jackbox Party Pack 7')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/2020/09/SevenLogoSmaller.gif')   
+                var jbox = [ j1, j3, j4, j5, j6, j7];
             
             var result = Math.floor((Math.random() * jbox.length) + 0);
             msg.channel.send(jbox[result]);
