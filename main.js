@@ -726,15 +726,15 @@ bot.on('message', msg=>{
             const pol = new Discord.MessageEmbed()
                 .setTitle('Play in POLUS')
                 .setColor('#092582')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/6/67/PolusButton.png/revision/latest?cb=20201006103729')
+                .setImage('https://prod.cdn.earlygame.com/uploads/images/_imageBlock/3904024/Polus.jpg?mtime=20201022125504&focal=none&tmtime=20201022132152')
             const mira = new Discord.MessageEmbed()
                 .setTitle('Play in MIRA HQ')
                 .setColor('#b51818')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/4/4d/MIRAHQButton.png/revision/latest/scale-to-width-down/185?cb=20201006103813')
+                .setImage('https://prod.cdn.earlygame.com/uploads/images/_imageBlock/3900598/Mirahq.jpg?mtime=20201022124132&focal=none&tmtime=20201022132151')
             const skeld = new Discord.MessageEmbed()
                 .setTitle('Play in The Skeld')
                 .setColor('#9c8686')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/c/c9/TheSkeldButton.png/revision/latest/scale-to-width-down/185?cb=20201006103842')    
+                .setImage('https://prod.cdn.earlygame.com/uploads/images/_imageBlock/SKELD_MAP-1.jpg?mtime=20201022122655&focal=none&tmtime=20201022132145')    
                 var mapss = [ pol, mira, skeld];
             
             var result = Math.floor((Math.random() * mapss.length) + 0);
@@ -765,8 +765,7 @@ bot.on('message', msg=>{
                 .addField('*Jackbox*','`ta jackbox` to randomly select which Jackbox game to play \n `ta j1, j3, j4, j5, j6, j7` to randomly select which minigame to play within a Jackbox game' )
                 .addField('*PUBG*', '`ta pubg` to randomly select which PUBG map to play on \n `ta sanhok, miramar, vikendi, erangel` to randomly select a place to land in the chosen map \n `ta map sanhok, miramar, vikendi, erangel` to display the appropriate map for each prompt \n `ta challenge` to randomly select a challenge ' )
                 .addField('*Among Us*', '`ta imp` to randomly select the number of imposters in a game \n `ta au` to randomly select the map you want to play in' )
-                .addField('----------------------------------------------','**Miscellaneous and Music**')
-                .addField('*Music*','`ta play <songname>` to play a certain song, (ignore the pointed brackets) \n `ta clear <number>` to clear a certain amount of lines, abuse will result in mute or ban')
+                .addField('----------------------------------------------','**Miscellaneous**')
                 .addField('*Miscellaneous*','`ta profile` to view data on the users profile \n `ta avatar` to get a direct link to the users profile picture')
                 .addField('***This bot is still in development and there are obviously going to be numerous bugs, please be patient with updates***','**----------------------------------------------**')
                 .setAuthor('Tanakiin')
