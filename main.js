@@ -105,7 +105,7 @@ bot.on('message', msg=>{
             var result = Math.floor((Math.random() * jbox.length) + 0);
             msg.channel.send(jbox[result]);
         break;
-        case 'jackbox1':
+        case 'j1':
             const ydkj15 = new Discord.MessageEmbed()
                 .setTitle('You shall play You Dont Know Jack 2015')
                 .setColor('#8E2610')
@@ -131,7 +131,59 @@ bot.on('message', msg=>{
             var result = Math.floor((Math.random() * jbox1.length) + 0);
             msg.channel.send(jbox1[result]);
         break;
-        case 'jackbox5':
+        case 'j3':
+            const quip2 = new Discord.MessageEmbed()
+                .setTitle('You shall play Quiplash 2')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/2020/04/Quiplash-2.png')
+            const triv = new Discord.MessageEmbed()
+                .setTitle('You shall play Trivia Murder Party')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/2019/06/Trivia-Murder-Party.png')
+            const guess = new Discord.MessageEmbed()
+                .setTitle('You shall play Guesspionage')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/2019/06/Guesspionage.png')
+            const tko = new Discord.MessageEmbed()
+                .setTitle('You shall play Tee KO')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/2020/04/Tee-KO-No-Text.png')
+            const fak = new Discord.MessageEmbed()
+                .setTitle('You shall play Fakin It')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/elementor/thumbs/Fakin-It-o9bdi6nb0i862bttrhuy7uq1doi27sshp5s6uwefwg.png')  
+                var jbox3 = [ quip2, triv, guess, tko, fak];
+            
+            var result = Math.floor((Math.random() * jbox3.length) + 0);
+            msg.channel.send(jbox3[result]);
+        break;
+        case 'j4':
+            const fib3 = new Discord.MessageEmbed()
+                .setTitle('You shall play Fibbage 3')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/elementor/thumbs/Fibbage-3-o9m4ct31j2q2m2mq2csw0io1r9y51qiqfjnfcz9af4.png')
+            const surv = new Discord.MessageEmbed()
+                .setTitle('You shall play Survive the Internet')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/elementor/thumbs/Survive-The-Internet-o8lm9isax0m6ch3qe0r5oui8vnjfnkvgm7wloo8qgw.png')
+            const mon = new Discord.MessageEmbed()
+                .setTitle('You shall play Monster seeking Monster')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/elementor/thumbs/Monster-Seeking-Monster-o8lm9xtpyd6ri8hvy796sqpmdthb2qj60acdd3mfpc.png')
+            const brak = new Discord.MessageEmbed()
+                .setTitle('You shall play Bracketeering')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/2019/05/Bracketeering.png')
+            const civ = new Discord.MessageEmbed()
+                .setTitle('You shall play Civic Doodle')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/elementor/thumbs/Civic-Doodle-o8lmb36mb2rdp2tt8p4rug9wirtghf3ctz1qh9x43k.png')  
+                var jbox4 = [ fib3, surv, mon, brak, civ];
+            
+            var result = Math.floor((Math.random() * jbox4.length) + 0);
+            msg.channel.send(jbox4[result]);
+        break;
+        case 'j5':
             const ydkj = new Discord.MessageEmbed()
                 .setTitle('You shall play You Dont Know Jack')
                 .setColor('#8E2610')
@@ -157,7 +209,7 @@ bot.on('message', msg=>{
             var result = Math.floor((Math.random() * jbox5.length) + 0);
             msg.channel.send(jbox5[result]);
         break;
-        case 'jackbox6':
+        case 'j6':
             const murder = new Discord.MessageEmbed()
                 .setTitle('You shall play Trivia Murder Party')
                 .setColor('#8E2610')
@@ -182,6 +234,32 @@ bot.on('message', msg=>{
             
             var result = Math.floor((Math.random() * jbox6.length) + 0);
             msg.channel.send(jbox6[result]);
+        break;
+        case 'j7':
+            const quip3 = new Discord.MessageEmbed()
+                .setTitle('You shall play Quiplash 3')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/2020/09/q3_logo_900_v1-e1600202564714.png')
+            const dev = new Discord.MessageEmbed()
+                .setTitle('You shall play The Devils and the Details')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/elementor/thumbs/Logo-e1600202591448-oviozcq8tgqhficc2w3jm9idgumrmd5833ikzdosn4.png')
+            const champ = new Discord.MessageEmbed()
+                .setTitle("You shall play Champ'd up")
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/elementor/thumbs/Game-Logo-e1600202544165-ovioy4jtw9209u4i8v02v2npjqoikl9u90urfdiark.png')
+            const talk = new Discord.MessageEmbed()
+                .setTitle('You shall play Talking Points')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/elementor/thumbs/Talking-Points-logo-square-e1600202475995-oviowboysol80qqprkytl10wk5k6th4d03u9ba6gow.png')
+            const blath = new Discord.MessageEmbed()
+                .setTitle('You shall play Blather Round')
+                .setColor('#8E2610')
+                .setImage('https://jackboxgames.b-cdn.net/wp-content/uploads/2020/09/BlatherLogoTransparent-e1600202605496.png')  
+                var jbox7 = [ quip3, dev, champ, talk, blath];
+            
+            var result = Math.floor((Math.random() * jbox7.length) + 0);
+            msg.channel.send(jbox7[result]);
         break;
         case 'pubg':
             const emap = new Discord.MessageEmbed()
@@ -684,132 +762,14 @@ bot.on('message', msg=>{
                 .setTitle('***Omnis Bot Help***')
                 .setColor('#8E2610')
                 .addField('----------------------------------------------','**Games**')
-                .addField('*Jackbox*','`ta jackbox` to randomly select which Jackbox game to play \n `ta jackbox1, jackbox5, jackbox6` to randomly select which minigame to play within a Jackbox game' )
-                .addField('*PUBG*', '`ta pubg` to randomly select which PUBG map to play on \n `ta sanhok, miramar, vikendi, erangel` to randomly select a place to land in the chosen map \n `ta map sanhok, miramar, vikendi, erangel` to display the appropriate map for each prompt' )
+                .addField('*Jackbox*','`ta jackbox` to randomly select which Jackbox game to play \n `ta j1, j3, j4, j5, j6, j7` to randomly select which minigame to play within a Jackbox game' )
+                .addField('*PUBG*', '`ta pubg` to randomly select which PUBG map to play on \n `ta sanhok, miramar, vikendi, erangel` to randomly select a place to land in the chosen map \n `ta map sanhok, miramar, vikendi, erangel` to display the appropriate map for each prompt \n `ta challenge` to randomly select a challenge ' )
                 .addField('----------------------------------------------','**Miscellaneous and Music**')
                 .addField('*Music*','`ta play <songname>` to play a certain song, (ignore the pointed brackets) \n `ta clear <number>` to clear a certain amount of lines, abuse will result in mute or ban')
                 .addField('*Miscellaneous*','`ta profile` to view data on the users profile \n `ta avatar` to get a direct link to the users profile picture')
                 .addField('***This bot is still in development and there are obviously going to be numerous bugs, please be patient with updates***','**----------------------------------------------**')
                 .setAuthor('Tanakiin')
                 msg.channel.send(helpembed)
-        break;
-        case 'test':
-            if (!msg.member.voice.channel)
-                msg.channel.send("Please join a voice channel first")
-            else msg.member.voice.channel.join()
-            .then(connection => {
-                const dispatcher = connection.play('C:/Users/ADMIN/Desktop/Discord Bot/test.mp3');
-                dispatcher.on("finish", () => {msg.member.voice.channel.leave()});
-            })
-            .catch(console.error);
-        break;
-        case 'name':
-            const red = new Discord.MessageEmbed()
-                .setTitle('Your Name is Red')
-                .setColor('#db0000')
-                .setThumbnail('https://i.imgur.com/n6vi8lF.png')
-            const blue = new Discord.MessageEmbed()
-                .setTitle('Your Name is Blue')
-                .setColor('#0500a1')
-                .setThumbnail('https://i.imgur.com/v8pX2m0.png')
-            const green = new Discord.MessageEmbed()
-                .setTitle('Your Name is Green')
-                .setColor('#0d6300')
-                .setThumbnail('https://i.imgur.com/w20AW9f.png')
-            const pink = new Discord.MessageEmbed()
-                .setTitle('Your Name is Pink')
-                .setColor('#ff00ae')
-                .setThumbnail('https://i.imgur.com/q1rZYVp.png')
-            const orange = new Discord.MessageEmbed()
-                .setTitle('Your Name is Orange')
-                .setColor('#ff5100')
-                .setThumbnail('https://i.imgur.com/oKI4Sey.png')
-            const yellow = new Discord.MessageEmbed()
-                .setTitle('Your Name is Yellow')
-                .setColor('#ffe600')
-                .setThumbnail('https://i.imgur.com/U4mUPjR.png')
-            const black = new Discord.MessageEmbed()
-                .setTitle('Your Name is Black')
-                .setColor('#000000')
-                .setThumbnail('https://i.imgur.com/wKcyDdd.png')
-            const white = new Discord.MessageEmbed()
-                .setTitle('Your Name is White')
-                .setColor('#c9c9c9')
-                .setThumbnail('https://i.imgur.com/pKp0Y54.png')
-            const purple = new Discord.MessageEmbed()
-                .setTitle('Your Name is Purple')
-                .setColor('#8f0081')
-                .setThumbnail('https://i.imgur.com/NZXl7Rr.png')
-            const brown = new Discord.MessageEmbed()
-                .setTitle('Your Name is Brown')
-                .setColor('#5c270b')
-                .setThumbnail('https://i.imgur.com/iKySSj9.png')
-            const lightblue = new Discord.MessageEmbed()
-                .setTitle('Your Name is Light Blue')
-                .setColor('#00ffe5')
-                .setThumbnail('https://i.imgur.com/1obCGH7.png')
-            const lime = new Discord.MessageEmbed()
-                .setTitle('Your Name is Lime')
-                .setColor('#80ff00')
-                .setThumbnail('https://i.imgur.com/K0K42qN.png')
-            var names = [red, blue, green, yellow, purple, pink, white, black, brown, orange, lime, lightblue];
-            
-            var result = Math.floor((Math.random() * names.length) + 0);
-            msg.channel.send(names[result]);
-        break;
-        case 'colour': case 'color':
-            const red1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Red')
-                .setColor('#db0000')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/a/a6/1_red.png/revision/latest/scale-to-width-down/140?cb=20200912125145')
-            const blue1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Blue')
-                .setColor('#0500a1')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/8/8e/2_blue.png/revision/latest/scale-to-width-down/140?cb=20200912125155')
-            const green1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Green')
-                .setColor('#0d6300')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/3/34/3_green.png/revision/latest/scale-to-width-down/140?cb=20200912125201')
-            const pink1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Pink')
-                .setColor('#ff00ae')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/9/9b/4_pink.png/revision/latest/scale-to-width-down/140?cb=20200912125206')
-            const orange1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Orange')
-                .setColor('#ff5100')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/f/f1/5_orange.png/revision/latest/scale-to-width-down/140?cb=20200912125212')
-            const yellow1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Yellow')
-                .setColor('#ffe600')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/5/54/6_yellow.png/revision/latest/scale-to-width-down/140?cb=20200912125217')
-            const black1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Black')
-                .setColor('#000000')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/5/55/7_black.png/revision/latest/scale-to-width-down/140?cb=20200912125223')
-            const white1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is White')
-                .setColor('#c9c9c9')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/e/e1/8_white.png/revision/latest/scale-to-width-down/140?cb=20200912125229')
-            const purple1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Purple')
-                .setColor('#8f0081')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/7/72/9_purple.png/revision/latest/scale-to-width-down/140?cb=20200912125234')
-            const brown1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Brown')
-                .setColor('#5c270b')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/b/b2/10_brown.png/revision/latest/scale-to-width-down/140?cb=20200912125240')
-            const lightblue1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Light Blue')
-                .setColor('#00ffe5')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/f/f2/11_cyan.png/revision/latest/scale-to-width-down/140?cb=20200912125246')
-            const lime1 = new Discord.MessageEmbed()
-                .setTitle('Your Colour is Lime')
-                .setColor('#80ff00')
-                .setImage('https://vignette.wikia.nocookie.net/among-us-wiki/images/f/fd/12_lime.png/revision/latest/scale-to-width-down/140?cb=20200912125258')
-            var colour = [red1, blue1, green1, yellow1, purple1, pink1, white1, black1, brown1, orange1, lime1, lightblue1];
-            
-            var result = Math.floor((Math.random() * colour.length) + 0);
-            msg.channel.send(colour[result]);
         break;
     }}
     const premap = 'ta map '
